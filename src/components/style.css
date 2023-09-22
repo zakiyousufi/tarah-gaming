@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Sansation';
+  src: url('../assests/fonts/Sansation_Regular.ttf') format('truetype');
+  font-family: 'RacingSansOne';
+  src: url('../assests/fonts/RacingSansOne-Regular.ttf') format('truetype');
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0px 18px 59px 0px rgba(255, 251, 251, 0.16);
+  padding: 0 142px 0 142px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.link {
+  color: #FFF;
+  font-family: 'Sansation', sans-serif;
+  text-decoration: none;
+}
+
+.link:hover, .link:focus {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 77px;
+  height: auto;
+}
+
+.main-page {
+  padding: 100px 142px 0 142px;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.content {
+  height: fit-content;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 550px;
+  padding-right: 8rem;
+}
+
+.title {
+  font-family: 'RacingSansOne', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sub-text {
+  font-family: 'RacingSansOne', sans-serif;
+}
+
+.about {
+  font-family: 'Sansation', sans-serif;
+  font-size: 15px;
+  line-height: normal;
+  width: 550px;
+  word-wrap: wrap;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.side-image {
+  width: 336px;
+  height: 456px;
+}
+
+.side-img {
+  max-width: 336px;
+  max-height: 456px;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 223, 255, 0.25);
+}
