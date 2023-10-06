@@ -11,8 +11,9 @@
   align-items: center;
   width: 100%;
   height: 60px;
-  background: rgba(255, 255, 255, 0.28);
-  box-shadow: 0px 18px 59px 0px rgba(255, 251, 251, 0.16);
+  background: rgb(113,238,254);
+  background: linear-gradient(45deg, rgba(113,238,254,1) 0%, rgb(53, 22, 63) 66%);
+  box-shadow: 0px 20px 30px 20px rgba(0, 0, 0, 0.3);
   padding: 0 142px 0 142px;
   position: fixed;
   top: 0;
@@ -100,4 +101,295 @@
   flex-shrink: 0;
   border-radius: 30px;
   box-shadow: 5px 5px 20px 0px rgba(0, 223, 255, 0.25);
+}
+
+.games{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-icon-container {
+  position: relative;
+  text-align: center;
+}
+
+.game-name-overlay {
+  position: absolute;
+  top: 49%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.795);
+  color: #fff;
+  padding: 10px;
+  width: 105px;
+  height: 140px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slider-icon {
+  width: 105px;
+  height: 137px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.game-icon-container:hover .game-name-overlay {
+  opacity: 1;
+}
+
+.game-image {
+  width: 712px;
+  height: 329.897px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.selected-game-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.28);
+  height: 45px;
+  padding: 5px 100px;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  bottom: 4px;
+  width: 712px;
+  font-family: 'RacingSansOne', sans-serif;
+}
+
+.selected-game-details {
+  width: 712px;
+  height: 284.897px;
+  background-color: rgba(0, 0, 0, 0.858);
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'RacingSansOne', sans-serif;
+}
+
+.single-slider:hover .selected-game-details {
+  opacity: 1;
+}
+
+.single-slider {
+  width: 712px;
+  height: 329.897px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  width: 30%;
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 10px;
+}
+
+.search-bar::placeholder {
+  color: #b3b1b1;
+}
+
+.download {
+  padding: 5px 0;
+}
+
+.link-button {
+  width: 180px;
+  background-color: #2B0E55;
+  height: 35px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.link-button:hover {
+  background-color: #3F1A7A;
+}
+
+.link-button a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+  font-family: 'Sansation', sans-serif;
+}
+
+.contact {
+  margin-top:4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 100px;
+  font-family: 'RacingSansOne', sans-serif;
+}
+
+.contact-details {
+  text-align: left;
+  padding-top: 40px;
+  font-family: 'Sansation', sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 30%;
+}
+
+.social-link {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #bd91fa;
+}
+
+.app-footer {
+  position: static;
+  margin-top: 5%;
+  width: 100%;
+  font-family: 'RacingSansOne', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.text-red {
+  color: #FF0000;
+}
+
+@media(max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .logo {
+    position: fixed;
+    top:  0;
+    left: 20px;
+  }
+
+  .main-page {
+    padding: 0;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.674) 0%, rgba(0, 0, 0, 0.674) 66%), url(../assests/Game.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 350px 40px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 300px;
+  }
+
+  .about {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  .game-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+
+  .selected-game-details {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: static;
+    opacity: 1;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.858);
+  }
+
+  .single-slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .contact {
+    padding: 45px 20px;
+  }
+
+  .contact-details {
+    padding-top: 20px;
+  }
+
+  .social-icons {
+    padding: 0;
+  }
+
+  .app-footer {
+    margin-top: 10%;
+  }
 }
