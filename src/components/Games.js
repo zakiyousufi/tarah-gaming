@@ -21,7 +21,7 @@ const GamesList = () => {
       } else if(window.innerWidth < breakpoint) {
         setSlidesToShow(4);
       } else {
-        setSlidesToShow(8); // Default number of slides to show for larger screens
+        setSlidesToShow(8);
       }
     };
 
