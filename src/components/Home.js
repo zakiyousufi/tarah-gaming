@@ -20,7 +20,7 @@ const Home = () => {
         <img className="side-img" src={SideImage} alt="side" />
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Home;
