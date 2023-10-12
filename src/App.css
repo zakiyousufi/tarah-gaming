@@ -5,6 +5,7 @@
 }
 
 .App {
+  width: 100%;
   text-align: center;
   background-image: url(./assests/DesktopBG.png);
   background-repeat: no-repeat;
@@ -12,5 +13,13 @@
   background-position: center;
   height: auto;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .App {
+    background-image: url(./assests/MobileBg.png);
+    height: auto;
+    color: #fff;
+  }
 }
 
